@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f3e8" />
+    <meta
+      name="description"
+      content="Browse the RK Farmer’s House product catalogue: fresh milk, drinks, paneer, curd, kova, Bilona ghee and seasonal produce."
+    />
+    <title>Products &amp; Prices — RK Farmer’s House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="catalog-page">
+    <div class="announcement">
+      <span class="announcement-dot" aria-hidden="true"></span>
+      Home delivery · Monthly subscriptions · Bulk orders
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="RK Farmer’s House home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" fill="none">
+            <path d="M21 5C16 12 9 18 9 26a12 12 0 0 0 24 0c0-8-7-14-12-21Z" fill="currentColor" />
+            <path d="M15 27c.5 3.2 2.5 5.2 5.5 6" stroke="#F8F7EF" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span class="brand-copy"><strong>RK Farmer’s House</strong><small>FRESH FROM OUR FARM</small></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span><span></span>
+      </button>
+
+      <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">Our story</a>
+        <a href="products.html#catalog" aria-current="page">Products</a>
+        <a href="products.html#catalog">Prices</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#feedback">Complaints</a>
+        <a class="nav-cta" href="https://wa.me/917382765588" target="_blank" rel="noopener">Order fresh <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="catalog-hero">
+        <div class="page-width catalog-hero-content">
+          <div>
+            <p class="eyebrow"><span></span> The good things we make</p>
+            <h1>Fresh from our farm,<br /><em>made for your home.</em></h1>
+            <p>Explore fresh dairy, drinks and seasonal produce. Find your favourites, choose a pack size and message us to order.</p>
+            <a class="button button-dark" href="#catalog">Browse the catalogue <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="catalog-hero-image">
+            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1100&q=85" alt="Green farmland and a farmhouse in the countryside" />
+            <span>GOODNESS, GROWN WITH CARE</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog section-pad" id="catalog">
+        <div class="page-width">
+          <div class="catalog-intro">
+            <div>
+              <p class="eyebrow"><span></span> Our product catalogue</p>
+              <h2>Find your <em>farm favourite.</em></h2>
+            </div>
+            <p>Prices are in Indian rupees (₹). No discounts are currently listed. Seasonal availability may vary — message us to confirm before ordering.</p>
+          </div>
+
+          <nav class="category-nav" aria-label="Jump to a product category">
+            <a href="#milk">Milk</a>
+            <a href="#drinks">Fresh drinks</a>
+            <a href="#paneer">Malai paneer</a>
+            <a href="#curd">Pot curd</a>
+            <a href="#kova">Kova</a>
+            <a href="#cow-ghee">A2 cow ghee</a>
+            <a href="#buffalo-ghee">Buffalo ghee</a>
+            <a href="#produce">Seasonal produce</a>
+          </nav>
+
+          <div class="catalog-grid">
+            <section class="catalog-card" id="milk">
+              <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=900&q=85" alt="Fresh milk poured into a glass" loading="lazy" />
+              <div class="catalog-card-content">
+                <p class="catalog-number">01 / STRAIGHT FROM THE FARM</p>
+                <h3>Milk</h3>
+                <div class="catalog-columns"><span>Product</span><span>Pack</span><span>Price</span><span>Discount</span></div>
+                <div class="catalog-item"><strong>A2 Cow Milk</strong><span>500 ml</span><b>₹48</b><span class="no-discount">—</span></div>
+                <div class="catalog-item"><strong>Buffalo Milk</strong><span>500 ml</span><b>₹65</b><span class="no-discount">—</span></div>
+                <a class="catalog-order" href="https://wa.me/917382765588?text=Hi%2C%20I%27d%20like%20to%20order%20milk." target="_blank" rel="noopener">Order milk <span aria-hidden="true">↗</span></a>
+              </div>
+            </section>
+
+            <section class="catalog-card" id="drinks">
+              <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=85" alt="A refreshing selection of colourful drinks" loading="lazy" />
+              <div class="catalog-card-content">
+                <p class="catalog-number">02 / FRESH &amp; REFRESHING</p>
+                <h3>Fresh drinks</h3>
+                <div class="catalog-columns"><span>Product</span><span>Pack</span><span>Price</span><span>Discount</span></div>
+                <div class="catalog-item"><strong>Coconut Water</strong><span>1 litre</span><b>₹169</b><span class="no-discount">—</span></div>
+                <div class="catalog-item"><strong>Lassi</strong><span>250 ml</span><b>₹40</b><span class="no-discount">—</span></div>
+                <div class="catalog-item"><strong>Badam Milk</strong><span>250 ml</span><b>₹60</b><span class="no-discount">—</span></div>
+                <div class="catalog-item"><strong>Buttermilk</strong><span>250 ml</span><b>₹30</b><span class="no-discount">—</span></div>
+                <div class="catalog-item"><strong>Rose Milk</strong><span>250 ml</span><b>₹50</b><span class="no-discount">—</span></div>
+                <div class="catalog-item"><strong>Coconut Milk</strong><span>250 ml</span><b>₹90</b><span class="no-discount">—</span></div>
+                <a class="catalog-order" href="https://wa.me/917382765588?text=Hi%2C%20I%27d%20like%20to%20order%20fresh%20drinks." target="_blank" rel="noopener">Order fresh drinks <span aria-hidden="true">↗</span></a>
+              </div>
+            </section>
+
+            <section class="catalog-card" id="paneer">
+              <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=900&q=85" alt="Freshly prepared paneer in an Indian dish" loading="lazy" />
+              <div class="catalog-card-content">
+                <p class="catalog-number">03 / FRESHLY MADE</p>
+                <h3>Fresh Malai Paneer</h3>
+                <div class="catalog-columns"><span>Product</span><span>Pack</span><span>Price</span><span>Discount</span></div>
+                <div class="catalog-item"><strong>Fresh Malai Paneer</strong><span>250 g</span><b>₹200</b><span class="no-discount">—</span></div>
+                <div class="catalog-item"><strong>Fresh Malai Paneer</strong><span>500 g</span><b>₹400</b><span class="no-discount">—</span></div>
+                <div class="catalog-item"><strong>Fresh Malai Paneer</strong><span>1 kg</span><b>₹800</b><span class="no-discount">—</span></div>
+                <a class="catalog-order" href="https://wa.me/917382765588?text=Hi%2C%20I%27d%20like%20to%20order%20fresh%20malai%20paneer." target="_blank" rel="noopener">Order paneer <span aria-hidden="true">↗</span></a>
+              </div>
+            </section>
+
+            <section class="catalog-card" id="curd">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85" alt="A bowl of fresh, creamy curd" loading="lazy" />
+              <div class="catalog-card-content">
+                <p class="catalog-number">04 / COOL &amp; CREAMY</p>
+                <h3>Pot curd</h3>
+                <div class="catalog-columns"><span>Product</span><span>Pack</span><span>Price</span><span>Discount</span></div>
+                <div class="catalog-item"><strong>Pot Curd</strong><span>600 ml</span><b>₹70</b><span class="no-discount">—</span></div>
+                <div class="catalog-item"><strong>Pot Curd</strong><span>1200 ml</span><b>₹130</b><span class="no-discount">—</span></div>
+                <a class="catalog-order" href="https://wa.me/917382765588?text=Hi%2C%20I%27d%20like%20to%20order%20pot%20curd." target="_blank" rel="noopener">Order pot curd <span aria-hidden="true">↗</span></a>
+              </div>
+            </section>
+
+            <section class="catalog-card" id="kova">
+              <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&w=900&q=85" alt="Traditional Indian milk sweets" loading="lazy" />
+              <div class="catalog-card-content">
+                <p class="catalog-number">05 / A LITTLE SWEETNESS</p>
+                <h3>Kova</h3>
+                <div class="catalog-columns"><span>Product</span><span>Pack</span><span>Price</span><span>Discount</span></div>
+                <div class="catalog-item"><strong>Kova</strong><span>500 g</span><b>₹600</b><span class="no-discount">—</span></div>
+                <div class="catalog-item"><strong>Kova</strong><span>1 kg</span><b>₹1,140</b><span class="no-discount">—</span></div>
+                <a class="catalog-order" href="https://wa.me/917382765588?text=Hi%2C%20I%27d%20like%20to%20order%20kova." target="_blank" rel="noopener">Order kova <span aria-hidden="true">↗</span></a>
+              </div>
+            </section>
+
+            <section class="catalog-card" id="cow-ghee">
+              <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=900&q=85" alt="Golden ghee in a glass bottle" loading="lazy" />
+              <div class="catalog-card-content">
+                <p class="catalog-number">06 / TRADITIONAL BILONA METHOD</p>
+                <h3>A2 Cow Ghee</h3>
+                <div class="catalog-columns"><span>Product</span><span>Pack</span><span>Price</span><span>Discount</span></div>
+                <div class="catalog-item"><strong>A2 Cow Ghee</strong><span>500 ml</span><b>₹1,200</b><span class="no-discount">—</span></div>
+                <div class="catalog-item"><strong>A2 Cow Ghee</strong><span>1000 ml</span><b>₹2,400</b><span class="no-discount">—</span></div>
+                <a class="catalog-order" href="https://wa.me/917382765588?text=Hi%2C%20I%27d%20like%20to%20order%20A2%20cow%20ghee." target="_blank" rel="noopener">Order A2 cow ghee <span aria-hidden="true">↗</span></a>
+              </div>
+            </section>
+
+            <section class="catalog-card" id="buffalo-ghee">
+              <img src="https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=900&q=85" alt="Creamy butter and traditional dairy ingredients" loading="lazy" />
+              <div class="catalog-card-content">
+                <p class="catalog-number">07 / TRADITIONAL BILONA METHOD</p>
+                <h3>Buffalo Ghee</h3>
+                <div class="catalog-columns"><span>Product</span><span>Pack</span><span>Price</span><span>Discount</span></div>
+                <div class="catalog-item"><strong>Buffalo Ghee</strong><span>500 ml</span><b>₹900</b><span class="no-discount">—</span></div>
+                <div class="catalog-item"><strong>Buffalo Ghee</strong><span>1000 ml</span><b>₹1,800</b><span class="no-discount">—</span></div>
+                <a class="catalog-order" href="https://wa.me/917382765588?text=Hi%2C%20I%27d%20like%20to%20order%20buffalo%20ghee." target="_blank" rel="noopener">Order buffalo ghee <span aria-hidden="true">↗</span></a>
+              </div>
+            </section>
+
+            <section class="catalog-card" id="produce">
+              <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=85" alt="Fresh seasonal vegetables ready to prepare" loading="lazy" />
+              <div class="catalog-card-content">
+                <p class="catalog-number">08 / FRESH WHEN IN SEASON</p>
+                <h3>Also available</h3>
+                <div class="catalog-columns catalog-columns-availability"><span>Product</span><span>Availability</span></div>
+                <div class="catalog-item catalog-item-availability"><strong>Fresh Vegetables</strong><span>As per requirement</span></div>
+                <div class="catalog-item catalog-item-availability"><strong>Seasonal Fruits</strong><span>As per requirement</span></div>
+                <div class="catalog-item catalog-item-availability"><strong>Cold-Pressed Juices</strong><span>Ask for availability</span></div>
+                <a class="catalog-order" href="https://wa.me/917382765588?text=Hi%2C%20please%20tell%20me%20what%20fresh%20produce%20is%20available." target="_blank" rel="noopener">Ask what's in season <span aria-hidden="true">↗</span></a>
+              </div>
+            </section>
+          </div>
+
+          <div class="delivery-banner">
+            <div><p class="eyebrow"><span></span> From our farm to your door</p><h2>Goodness, <em>delivered.</em></h2><p>Home delivery, monthly subscriptions and bulk orders are available in Vizag and Hyderabad.</p></div>
+            <div class="delivery-actions"><a class="button button-dark" href="https://wa.me/917382765588" target="_blank" rel="noopener">Order on WhatsApp <span aria-hidden="true">↗</span></a><a href="tel:+917382765588">Call 73827 65588</a><a href="tel:+918523075077">Call 85230 75077</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-top">
+        <a class="brand brand-footer" href="index.html#home">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 42 42" fill="none"><path d="M21 5C16 12 9 18 9 26a12 12 0 0 0 24 0c0-8-7-14-12-21Z" fill="currentColor" /><path d="M15 27c.5 3.2 2.5 5.2 5.5 6" stroke="#F8F7EF" stroke-width="2" stroke-linecap="round" /></svg></span>
+          <span class="brand-copy"><strong>RK Farmer’s House</strong><small>FRESH FROM OUR FARM</small></span>
+        </a>
+        <p>Home delivery · Monthly subscriptions<br />Bulk orders accepted · Vizag &amp; Hyderabad</p>
+        <a class="back-top" href="#catalog">Back to the top <span aria-hidden="true">↑</span></a>
+      </div>
+      <div class="page-width footer-bottom"><span>© <span id="current-year"></span> RK Farmer’s House. Made with care.</span><span>Fresh from our farm to your home.</span></div>
+    </footer>
+  </body>
+</html>
