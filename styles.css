@@ -25,6 +25,7 @@ button, input, select, textarea { font: inherit; }
 .announcement-dot { width: 6px; height: 6px; background: #d89c64; border-radius: 50%; }
 .site-header { height: 82px; padding: 0 max(48px, calc((100% - 1180px) / 2)); display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 10; background: var(--cream); }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--green); flex-shrink: 0; }
+.brand-logo { display: block; width: 142px; height: 66px; object-fit: contain; }
 .brand-mark { width: 39px; height: 39px; display: block; }
 .brand-mark svg { width: 100%; height: 100%; }
 .brand-copy { display: grid; gap: 3px; }
@@ -167,6 +168,7 @@ h1 em, h2 em { color: #d9a171; font-weight: 500; }
 .footer-top { display: flex; align-items: center; justify-content: space-between; padding-bottom: 31px; }
 .brand-footer { color: #eef0e5; }
 .brand-footer .brand-copy small { color: #b2bdaa; }
+.brand-footer .brand-logo { filter: brightness(0) invert(1); }
 .footer-top > p { margin: 0; color: #c3ccbd; font-family: var(--serif); font-size: 13px; font-style: italic; line-height: 1.6; }
 .back-top { display: inline-flex; gap: 12px; align-items: center; color: #dbe1d5; font-size: 10px; }
 .back-top span { color: #e0a173; font-size: 16px; }
@@ -298,6 +300,23 @@ h1 em, h2 em { color: #d9a171; font-weight: 500; }
 .delivery-banner > div:first-child > p:last-child { max-width: 470px; margin: 0; color: #777e74; font-size: 11px; line-height: 1.8; }
 .delivery-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 11px; flex-shrink: 0; }
 .delivery-actions > a:not(.button) { color: var(--green); font-size: 10px; }
+.catalog-feature-section { margin-top: 74px; scroll-margin-top: 78px; }
+.catalog-feature-heading { display: flex; align-items: end; justify-content: space-between; gap: 28px; margin-bottom: 24px; }
+.catalog-feature-heading .eyebrow { margin-bottom: 14px; }
+.catalog-feature-heading h2 { margin: 0; color: var(--green); font-size: clamp(35px, 3.8vw, 48px); line-height: 1.12; }
+.catalog-feature-heading h2 em { color: var(--orange); }
+.catalog-feature-heading > p { max-width: 380px; margin: 0 0 3px; color: #777e74; font-size: 11px; line-height: 1.8; }
+.produce-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 13px; }
+.produce-card { min-width: 0; overflow: hidden; border: 1px solid #e3e1d4; background: #fbfaf5; }
+.produce-card > img { display: block; width: 100%; height: 175px; object-fit: cover; background: #f1efe6; }
+.produce-card > div { min-height: 70px; padding: 11px 12px 12px; }
+.produce-card h3 { margin: 0 0 6px; color: var(--green); font-family: var(--serif); font-size: 13px; font-weight: 500; line-height: 1.35; }
+.produce-card > div > span { color: #818575; font-size: 9px; }
+.juice-section { padding-top: 5px; }
+.juice-subheading { margin: 34px 0 14px; color: var(--green); font-family: var(--serif); font-size: 22px; font-weight: 500; }
+.juice-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.juice-grid .produce-card > img { height: 210px; }
+.juice-section > .catalog-order { margin-top: 24px; }
 
 @media (max-width: 900px) {
   .catalog-hero-content { gap: 5%; }
@@ -305,6 +324,8 @@ h1 em, h2 em { color: #d9a171; font-weight: 500; }
   .catalog-grid { gap: 16px; }
   .catalog-card-content { padding: 18px 15px 16px; }
   .catalog-columns, .catalog-item { grid-template-columns: minmax(0, 1fr) 52px 63px 53px; gap: 3px; }
+  .produce-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .produce-card > img { height: 160px; }
 }
 
 @media (max-width: 680px) {
@@ -325,6 +346,16 @@ h1 em, h2 em { color: #d9a171; font-weight: 500; }
   .catalog-item { min-height: 43px; font-size: 9px; }
   .catalog-item b { font-size: 10px; }
   .catalog-columns-availability, .catalog-item-availability { grid-template-columns: minmax(0, 1fr) 125px; }
+  .brand-logo { width: 126px; height: 58px; }
+  .catalog-feature-section { margin-top: 53px; }
+  .catalog-feature-heading { display: block; margin-bottom: 18px; }
+  .catalog-feature-heading h2 { font-size: 38px; }
+  .catalog-feature-heading > p { margin-top: 13px; }
+  .produce-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .produce-card > img { height: 165px; }
+  .produce-card > div { min-height: 66px; padding: 10px; }
+  .juice-grid .produce-card > img { height: 190px; }
+  .juice-subheading { margin-top: 27px; font-size: 20px; }
   .delivery-banner { align-items: flex-start; flex-direction: column; margin-top: 39px; padding: 25px 20px; }
   .delivery-banner h2 { font-size: 33px; }
   .delivery-actions { gap: 13px; }
