@@ -25,12 +25,7 @@ button, input, select, textarea { font: inherit; }
 .announcement-dot { width: 6px; height: 6px; background: #d89c64; border-radius: 50%; }
 .site-header { height: 82px; padding: 0 max(48px, calc((100% - 1180px) / 2)); display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 10; background: var(--cream); }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--green); flex-shrink: 0; }
-.brand-logo { display: block; width: 142px; height: 66px; object-fit: contain; }
-.brand-mark { width: 39px; height: 39px; display: block; }
-.brand-mark svg { width: 100%; height: 100%; }
-.brand-copy { display: grid; gap: 3px; }
-.brand-copy strong { font-family: var(--serif); font-size: 18px; font-weight: 600; letter-spacing: -.03em; }
-.brand-copy small { color: var(--green-muted); font-size: 8px; font-weight: 700; letter-spacing: .17em; }
+.brand-logo { display: block; width: 118px; height: 52px; object-fit: contain; }
 .navigation { display: flex; align-items: center; gap: 31px; color: #5b6251; font-size: 12px; }
 .navigation > a:not(.nav-cta) { transition: color .2s ease; }
 .navigation > a:not(.nav-cta):hover { color: var(--orange); }
@@ -194,9 +189,6 @@ h1 em, h2 em { color: #d9a171; font-weight: 500; }
   .section-pad { padding: 78px 0; }
   .announcement { height: 31px; font-size: 8px; letter-spacing: .09em; }
   .site-header { height: 69px; padding: 0 20px; }
-  .brand-mark { width: 34px; height: 34px; }
-  .brand-copy strong { font-size: 16px; }
-  .brand-copy small { font-size: 7px; }
   .menu-toggle { display: flex; width: 40px; height: 40px; flex-direction: column; justify-content: center; align-items: center; gap: 6px; border: 1px solid #d9ddd1; background: transparent; }
   .menu-toggle span { width: 17px; height: 1px; background: var(--green); transition: transform .2s; }
   .menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(3.5px) rotate(45deg); }
@@ -278,7 +270,7 @@ h1 em, h2 em { color: #d9a171; font-weight: 500; }
 .category-nav a:hover, .category-nav a:focus-visible { color: white; background: var(--green); }
 .catalog-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
 .catalog-card { min-width: 0; overflow: hidden; border: 1px solid #e3e1d4; background: #fbfaf5; scroll-margin-top: 76px; }
-.catalog-card > img { height: 205px; object-fit: cover; }
+.catalog-card > img { height: 175px; padding: 8px; object-fit: contain; background: #fff; }
 .catalog-card-content { padding: 21px 22px 18px; }
 .catalog-number { margin: 0 0 8px; color: #8c8f7d; font-size: 8px; letter-spacing: .15em; }
 .catalog-card h3 { margin: 0 0 16px; color: var(--green); font-family: var(--serif); font-size: 25px; font-weight: 500; }
@@ -306,16 +298,16 @@ h1 em, h2 em { color: #d9a171; font-weight: 500; }
 .catalog-feature-heading h2 { margin: 0; color: var(--green); font-size: clamp(35px, 3.8vw, 48px); line-height: 1.12; }
 .catalog-feature-heading h2 em { color: var(--orange); }
 .catalog-feature-heading > p { max-width: 380px; margin: 0 0 3px; color: #777e74; font-size: 11px; line-height: 1.8; }
-.produce-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 13px; }
+.produce-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 13px; }
 .produce-card { min-width: 0; overflow: hidden; border: 1px solid #e3e1d4; background: #fbfaf5; }
-.produce-card > img { display: block; width: 100%; height: 175px; object-fit: cover; background: #f1efe6; }
+.produce-card > img { display: block; width: 100%; height: 150px; padding: 7px; object-fit: contain; background: #fff; }
 .produce-card > div { min-height: 70px; padding: 11px 12px 12px; }
 .produce-card h3 { margin: 0 0 6px; color: var(--green); font-family: var(--serif); font-size: 13px; font-weight: 500; line-height: 1.35; }
 .produce-card > div > span { color: #818575; font-size: 9px; }
 .juice-section { padding-top: 5px; }
 .juice-subheading { margin: 34px 0 14px; color: var(--green); font-family: var(--serif); font-size: 22px; font-weight: 500; }
-.juice-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.juice-grid .produce-card > img { height: 210px; }
+.juice-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.juice-grid .produce-card > img { height: 160px; }
 .juice-section > .catalog-order { margin-top: 24px; }
 
 @media (max-width: 900px) {
@@ -324,8 +316,8 @@ h1 em, h2 em { color: #d9a171; font-weight: 500; }
   .catalog-grid { gap: 16px; }
   .catalog-card-content { padding: 18px 15px 16px; }
   .catalog-columns, .catalog-item { grid-template-columns: minmax(0, 1fr) 52px 63px 53px; gap: 3px; }
-  .produce-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .produce-card > img { height: 160px; }
+  .produce-grid, .juice-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .produce-card > img { height: 145px; }
 }
 
 @media (max-width: 680px) {
@@ -340,21 +332,20 @@ h1 em, h2 em { color: #d9a171; font-weight: 500; }
   .catalog-intro h2 { font-size: 39px; }
   .category-nav { margin-right: -20px; margin-left: -20px; padding: 11px 20px; }
   .catalog-grid { grid-template-columns: 1fr; gap: 15px; }
-  .catalog-card > img { height: 190px; }
+  .catalog-card > img { height: 145px; }
   .catalog-card-content { padding: 19px 17px 17px; }
   .catalog-columns, .catalog-item { grid-template-columns: minmax(0, 1fr) 57px 66px 58px; gap: 4px; }
   .catalog-item { min-height: 43px; font-size: 9px; }
   .catalog-item b { font-size: 10px; }
   .catalog-columns-availability, .catalog-item-availability { grid-template-columns: minmax(0, 1fr) 125px; }
-  .brand-logo { width: 126px; height: 58px; }
+  .brand-logo { width: 108px; height: 48px; }
   .catalog-feature-section { margin-top: 53px; }
   .catalog-feature-heading { display: block; margin-bottom: 18px; }
   .catalog-feature-heading h2 { font-size: 38px; }
   .catalog-feature-heading > p { margin-top: 13px; }
-  .produce-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-  .produce-card > img { height: 165px; }
+  .produce-grid, .juice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .produce-card > img { height: 135px; padding: 5px; }
   .produce-card > div { min-height: 66px; padding: 10px; }
-  .juice-grid .produce-card > img { height: 190px; }
   .juice-subheading { margin-top: 27px; font-size: 20px; }
   .delivery-banner { align-items: flex-start; flex-direction: column; margin-top: 39px; padding: 25px 20px; }
   .delivery-banner h2 { font-size: 33px; }
